@@ -7,13 +7,17 @@
 - (void)initialize
 {
     // your code here
+    character = (Character*)[CCBReader load:@"Character"];
 }
 
--(void)update:(CCTime)delta
+- (void)update:(CCTime)delta
 {
     // put update code here
 }
 
 // put new methods here
+- (void)touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event{
+    // this will get called every time the screen is touched
+}
 
 @end
